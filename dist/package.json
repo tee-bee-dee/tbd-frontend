@@ -1,0 +1,12 @@
+{
+  "name": "dist",
+  "version": "1.0.0",
+  "description": "",
+  "author": "John Gamboa <johnhadriansgamboa@gmail.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
