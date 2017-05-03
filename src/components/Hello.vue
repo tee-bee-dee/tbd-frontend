@@ -5,8 +5,8 @@
         <header>FORMAT DATE</header>
         <p>Note: Input must be 8 digits.</p>
         <p>Example: 11031995 ==> 11-03-1995 </p>
-        <input id="date" type="text" v-model="date1">
-        <button class="btn btn1" type="button" v-on:click="formatDate">Format Date</button>
+        <input id="date1" type="text" v-model="date1">
+        <button class="btn btn1" type="button" name="formatDate" v-on:click="formatDate">Format Date</button>
         <div id="formatResult">{{ formattedDate }}</div>
       </form>
     </div>
@@ -17,7 +17,7 @@
         <p>Note: Input must be MM-DD-YYYY.</p>
         <p>Example: 11-03-1995 ==> true </p>
         <input id="date2" type="text" v-model="date2">
-        <button class="btn btn2" type="button" v-on:click="validateDate">Validate Date</button>
+        <button class="btn btn2" type="button" name="validateDate" v-on:click="validateDate">Validate Date</button>
         <div id="validateResult">{{ validDate }}</div>
       </form>
     </div>
@@ -123,6 +123,7 @@ header:after {
 	padding-top: 37px;
 	box-shadow: 0 10px 12.5px 0 rgba(0, 0, 0, 0.2), 0 7.5px 25px 0 rgba(0, 0, 0, 0.19);
 	height: 400px;
+  margin-right: 10px;
 }
 
 #second {
@@ -131,9 +132,10 @@ header:after {
 	padding-top: 37px;
 	box-shadow: 0 10px 12.5px 0 rgba(0, 0, 0, 0.2), 0 7.5px 25px 0 rgba(0, 0, 0, 0.19);
 	height: 400px;
+  margin-left: 10px;
 }
 
-#date {
+#date1 {
 	border: none;
 	outline: none;
 	background-color: #eafafa;
