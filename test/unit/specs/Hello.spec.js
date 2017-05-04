@@ -15,4 +15,8 @@ describe('Hello.vue', () => {
     expect(vm.$el.querySelector('#validateResult').textContent)
       .to.equal('')
   })
+
+  it('purposely fail test', () => {
+    expect('swag').to.equal('bruh')
+  })
 })
